@@ -1,3 +1,4 @@
 import Button from "./components/Button";
+import Tag from "./components/Tag";
 
-export default Button;
+export { Button, Tag };
