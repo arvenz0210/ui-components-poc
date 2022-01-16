@@ -8,7 +8,7 @@ interface ButtonProps {
 const Button = (props: ButtonProps) => {
     const { text } = props;
 
-    return <button>{text}</button>;
+    return <button className="button">{text}</button>;
 };
 
 export default Button;
