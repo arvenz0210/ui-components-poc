@@ -7,4 +7,4 @@ export default {
     title: "Components/Tag",
 } as Meta;
 
-export const Default: React.VFC<{}> = () => <Tag text="Press Me Babe!" />;
+export const Default: React.VFC<{}> = () => <Tag text="Important Text" />;
