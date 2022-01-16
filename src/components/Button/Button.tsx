@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.sass";
 
 interface ButtonProps {
     text: string;
@@ -7,7 +8,7 @@ interface ButtonProps {
 const Button = (props: ButtonProps) => {
     const { text } = props;
 
-    return <button>{text}</button>;
+    return <button className="button">{text}</button>;
 };
 
 export default Button;
