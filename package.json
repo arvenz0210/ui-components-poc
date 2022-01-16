@@ -1,7 +1,7 @@
 {
     "name": "pomelo-core-ui-poc",
     "version": "1.0.0",
-    "description": "poc for build pomelo-core-ui",
+    "description": "Pocs for build pomelo-core-ui",
     "scripts": {
         "st": "start-storybook -p 6006",
         "build-storybook": "build-storybook",
