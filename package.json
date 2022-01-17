@@ -5,7 +5,7 @@
     "scripts": {
         "st": "start-storybook -p 6006",
         "build-storybook": "build-storybook",
-        "build": "webpack"
+        "b": "webpack"
     },
     "author": "andy.tsx",
     "license": "ISC",
@@ -23,13 +23,16 @@
         "@storybook/addon-actions": "^6.3.4",
         "@storybook/addon-essentials": "^6.3.4",
         "@storybook/addon-links": "^6.3.4",
+        "@storybook/addon-postcss": "^2.0.0",
         "@storybook/builder-webpack5": "^6.3.4",
         "@storybook/manager-webpack5": "^6.3.4",
         "@storybook/react": "^6.3.4",
         "babel-loader": "^8.2.3",
-        "css-loader": "5.2.7",
-        "sass": "1.35.2",
-        "sass-loader": "10.1.1",
+        "css-loader": "^6.5.1",
+        "postcss": "^8.4.5",
+        "postcss-import": "^14.0.2",
+        "postcss-loader": "^6.2.1",
+        "postcss-preset-env": "^7.2.3",
         "style-loader": "^3.3.1",
         "webpack": "5.66.0",
         "webpack-cli": "^4.9.1"

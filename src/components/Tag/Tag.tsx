@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.sass";
+import "./index.css";
 
 interface TagProps {
     text: string;

@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.sass";
+import "./index.css";
 
 interface ButtonProps {
     text: string;
