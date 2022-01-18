@@ -5,7 +5,7 @@
     "scripts": {
         "st": "start-storybook -p 6006",
         "build-storybook": "build-storybook",
-        "b": "webpack"
+        "b": "webpack --mode=production"
     },
     "author": "andy.tsx",
     "license": "ISC",

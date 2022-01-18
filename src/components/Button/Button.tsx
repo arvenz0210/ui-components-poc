@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.css";
 
 interface ButtonProps {
     text: string;
@@ -8,7 +7,11 @@ interface ButtonProps {
 const Button = (props: ButtonProps) => {
     const { text } = props;
 
-    return <button className="text-red-400">{text}</button>;
+    return (
+        <button className="bg-rose-500 text-white p-4 border-radius rounded-lg">
+            {text}
+        </button>
+    );
 };
 
 export default Button;
