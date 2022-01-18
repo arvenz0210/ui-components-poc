@@ -1,3 +1,3 @@
-const build = require("./dist/main");
+const dist = require("./dist");
 
-module.exports = build;
+module.exports = dist;

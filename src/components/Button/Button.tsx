@@ -1,15 +1,15 @@
 import React from "react";
 
 interface ButtonProps {
-    text: string;
+    children: string;
 }
 
 const Button = (props: ButtonProps) => {
-    const { text } = props;
+    const { children } = props;
 
     return (
         <button className="bg-rose-500 text-white p-4 border-radius rounded-lg">
-            {text}
+            {children}
         </button>
     );
 };
