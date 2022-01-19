@@ -6,7 +6,7 @@
     "scripts": {
         "st": "start-storybook -p 6006",
         "build-storybook": "build-storybook",
-        "b": "webpack --mode=production"
+        "b": "webpack --mode=development"
     },
     "author": "andy.tsx",
     "license": "ISC",
@@ -14,7 +14,9 @@
         "@storybook/preset-scss": "^1.0.3",
         "mini-css-extract-plugin": "^2.5.2",
         "react": "^17.0.2",
-        "react-dom": "^17.0.2"
+        "react-dom": "^17.0.2",
+        "ts-loader": "^9.2.6",
+        "typescript": "^4.5.4"
     },
     "devDependencies": {
         "@babel/core": "^7.16.7",

@@ -7,4 +7,4 @@ export default {
     title: "Components/Button",
 } as Meta;
 
-export const Default: React.VFC<{}> = () => <Button text="Press Me Babe!" />;
+export const Default: React.VFC<{}> = () => <Button>Text</Button>;
