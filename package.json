@@ -1,5 +1,5 @@
 {
-    "name": "pomelo-core-ui-poc",
+    "name": "pomelo-core-ui-pocs",
     "version": "1.0.0",
     "description": "Pocs for build pomelo-core-ui",
     "main": "dist/index.js",
