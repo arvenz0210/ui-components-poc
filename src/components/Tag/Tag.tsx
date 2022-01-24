@@ -1,5 +1,4 @@
 import React from "react";
-import "./index.sass";
 
 interface TagProps {
     text: string;
@@ -8,7 +7,11 @@ interface TagProps {
 const Tag = (props: TagProps) => {
     const { text } = props;
 
-    return <div className="tag">{text}</div>;
+    return (
+        <div className="bg-rose-200 inline-block text-black px-2 py-1 border-radius rounded-lg">
+            {text}
+        </div>
+    );
 };
 
 export default Tag;

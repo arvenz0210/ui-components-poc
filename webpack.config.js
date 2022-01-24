@@ -1,31 +1,39 @@
 const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     mode: "development",
-    entry: "./src/index.js",
+    entry: ["./src/index.ts"],
+    plugins: [new MiniCssExtractPlugin()],
     module: {
         rules: [
             {
                 test: /\.ts?x$/,
                 exclude: /node_modules/,
-                use: {
-                    loader: "babel-loader",
-                },
+                use: "babel-loader",
             },
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.css$/i,
                 use: [
-                    // Creates `style` nodes from JS strings
-                    "style-loader",
-                    // Translates CSS into CommonJS
-                    "css-loader",
-                    // Compiles Sass to CSS
-                    "sass-loader",
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: "css-loader",
+                        options: {
+                            modules: true,
+                        },
+                    },
+                    "postcss-loader",
                 ],
             },
         ],
     },
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
+    },
+    output: {
+        filename: "index.js",
+        path: path.resolve(__dirname, "dist"),
+        libraryTarget: "commonjs",
+        globalObject: "this",
     },
 };
